@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-family: Rubik;
+  padding: 3%;
 }
 
 .App-logo {
