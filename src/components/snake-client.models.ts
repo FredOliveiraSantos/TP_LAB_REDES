@@ -13,12 +13,18 @@ export interface IFood {
     readonly y : number;
 };
 
-const colorPallet = ['red', 'blue', 'green', 'yellow', 'pink'];
+export enum ColorPallet {
+    RED = 'READ',
+    BLUE = 'BLUE',
+    GREEN = 'GREEN',
+    YELLOW = 'YELLOW'
+}
 
 export interface ISnakeClientState {
     readonly color : string;
     readonly food : IFood;
     readonly player : IPlayer;
-    readonly serverStatus : string;
-    readonly serverRule : 0;
+    readonly serverStatus : string | JSX.Element; 
+    readonly serverRule : number;
+    readonly people : null | ReadonlyArray<IPlayer>;
 }
